@@ -1,0 +1,11 @@
+/* left 15rem, middle 20rem, right 24rem */
+$fullWidth: 1181px;
+$lessFullWidth: 1180px;
+/* left 2.4rem, middle 16rem, right 24rem */
+$mediumWidth: 849px; 
+$lessMediumWidth: 848px;
+/* left 15rem, middle 16rem, right hidden */
+$smallWidth: 621px;
+$lessSmallWidth: 620px;
+
+$minWidth: 320px;

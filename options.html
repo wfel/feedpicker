@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FeedPicker 全局设置</title>
+        <style>
+            #mask {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0,0,0,.8);
+            }
+            .hidden {
+                display: none;
+            }
+            input {
+                margin: 0;
+            }
+            .main-container {
+                width: 600px;
+                margin: 36px auto;
+                line-height: 2;
+            }
+            .settings-table {
+                width: 100%;
+            }
+            .settings-table th, .settings-table td {
+                padding: 0 .5em;
+                vertical-align: middle;
+            }
+            .settings-table th {
+                font-weight: bold;
+                text-align: right;
+            }
+            .settings-table tfoot {
+                text-align: center;
+            }
+            .settings-table tfoot td {
+                padding-top: 12px;
+            }
+            .settings-table tfoot button {
+                margin: 0 .25em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>FeedPicker 全局设置</h1>
+        <hr>
+        <div class="main-container">
+            <table class="settings-table">
+                <tbody>
+                    <tr>
+                        <th><label for="update-interval">自动更新频率:</label></th>
+                        <td>每<input type="number" id="update-interval">分钟</td>
+                    </tr>
+                    <tr>
+                        <th><label for="use-badge">在图标上提示更新状态:</label></th>
+                        <td><input type="checkbox" id="use-badge"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            <button type="button" id="btn-apply">应用</button>
+                            <button type="button" id="btn-abort">放弃修改</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div id="mask"></div>
+        <script src="dist/options.bundle.js"></script>
+    </body>
+</html>

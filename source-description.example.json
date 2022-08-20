@@ -1,0 +1,34 @@
+{
+    "catalogURL": "https://git-scm.com/book/zh/v2",
+    "link": {
+      "selector": "li.chapter a",
+      "pattern": {
+        "type": "attr",
+        "value": "href"
+      }
+    },
+    "title": {
+      "from": "link",
+      "selector": "#main > h1",
+      "pattern": {
+        "type": "textContent"
+      }
+    },
+    "date": {
+      "from": "now"
+    },
+    "content": {
+      "from": "link",
+      "selector": "#main > div",
+      "pattern": {
+        "type": "outerHTML"
+      }
+    },
+    "key": [
+      "link"
+    ],
+    "hash": [
+      "title",
+      "content"
+    ]
+  }

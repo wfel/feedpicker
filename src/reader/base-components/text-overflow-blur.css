@@ -1,0 +1,14 @@
+@mixin blur-gradient($final-color) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), $final-color 75%);
+}
+@mixin overflow-blur($top, $final-color) {
+    content: '.';
+    color: transparent;
+    
+    position: absolute;
+    top: $top;
+    right: 0;
+    
+    width: 5em;
+    @include blur-gradient($final-color);
+}

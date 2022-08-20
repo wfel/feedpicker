@@ -1,0 +1,46 @@
+{
+    "manifest_version": 2,
+    "name": "feed-picker",
+    "version": "0.0.6",
+
+    "description": "Pick pages and turn them into feed",
+    "icons": {
+        "48": "icons/feed-picker-48.png"
+    },
+
+    "permissions": [
+        "<all_urls>",
+        "storage"
+    ],
+
+    "content_security_policy": "default-src 'self'; script-src 'self' 'unsafe-eval' 'sha256-NYtsRhGZ/sVQeX7xdzTMe/HM7vUt8jQ5THPK8JLPnYA='; connect-src * 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:",
+
+    "minimum_chrome_version": "46.0",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{e9f299c7-0a91-4bcc-b170-7494a6126d92}",
+            "strict_min_version": "49.0"
+        }
+    },
+
+    "options_page": "options.html",
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": true,
+        "chrome_style": true,
+        "open_in_tab": true
+    },
+
+    "background": {
+        "page": "background.html"
+    },
+
+    "browser_action": {
+        "browser_style": false,
+        "default_icon": {
+            "48": "icons/feed-picker-48.png"
+        },
+        "default_title": "FeedPicker",
+        "default_popup": "popup.html"
+    }
+}

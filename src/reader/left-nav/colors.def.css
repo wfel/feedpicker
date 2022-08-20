@@ -1,0 +1,15 @@
+$subtitleThemeColor: #424140;
+$btnThemeColor: #0776A0;
+
+$commonBtnBgcolor: $btnThemeColor;
+$commonBtnBgcolorHover: #226078;
+$commonBtnBgcolorActive: #024C68;
+
+$doneBtnTextcolor: #62B1D0;
+$doneBtnTextcolorHover: #3AA6D0;
+$doneBtnTextcolorActive: $commonBtnBgcolor;
+
+$listItemBorderColor: whitesmoke;
+$listItemBgcolor: white;
+$listItemBgcolorHover: #f9f9f9;
+$listItemBgcolorActive: #e9e9e9;

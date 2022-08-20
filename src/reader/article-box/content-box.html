@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 1rem .5rem;
+        }
+    </style>
+</head>
+<body>
+    <p style="text-align: center;">Loading...</p>
+    <script>(function(){var messageListener = function(ev) { if(ev.data.name !== 'setContent') return; window.parent.postMessage({ name: 'contentSet', token: ev.data.token }, '*'); document.body.innerHTML = ev.data.innerHTML; console.log(ev.data.sender); }; var loadListener = function() { window.addEventListener('message', messageListener); }; var clickListener = function(ev) { if(ev.button === 0) { window.parent.postMessage({name: 'click'}, '*'); } }; var beforeunloadListener = function myfunc() { window.removeEventListener('click', clickListener); window.removeEventListener('message', messageListener); window.removeEventListener('load', loadListener); window.removeEventListener('befoerunload', myfunc); }; window.addEventListener('click', clickListener); window.addEventListener('load', loadListener); window.addEventListener('beforeunload', beforeunloadListener);})();</script>
+</body>
+</html>

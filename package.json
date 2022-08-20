@@ -1,0 +1,53 @@
+{
+  "name": "feed-picker",
+  "version": "0.0.6",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "build-options": "node ./node_modules/webpack/bin/webpack.js --config options.webpack.config.js",
+    "build-popup": "node ./node_modules/webpack/bin/webpack.js --config popup.webpack.config.js",
+    "build-background": "node ./node_modules/webpack/bin/webpack.js --config background.webpack.config.js",
+    "build-reader": "node ./node_modules/webpack/bin/webpack.js --config reader.webpack.config.js",
+    "build-all": "npm run build-options && npm run build-popup && npm run build-background && npm run build-reader"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "autoprefixer": "^9.5.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.15.3",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.2",
+    "eslint-plugin-vue": "^5.2.2",
+    "jest": "^24.5.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "raw-loader": "^2.0.0",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "axios": "^0.18.0",
+    "core-js": "^3.0.1",
+    "dexie": "^2.0.4",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.23",
+    "murmurhash-js": "^1.0.0",
+    "url-parse": "^1.4.4",
+    "vue": "^2.6.10",
+    "vuedraggable": "^2.20.0",
+    "vuex": "^3.1.0"
+  }
+}

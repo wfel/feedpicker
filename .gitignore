@@ -1,0 +1,8 @@
+node_modules
+node_modules/*
+.vscode
+web-ext-artifacts
+.web-extension-id
+dist
+assets/fontawesome
+assets/fontawesome/*
